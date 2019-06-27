@@ -1,7 +1,6 @@
 import requests, json, time
-from config import api_key as YOUR_KEY  
+from config import api_key 
 
-api_key = YOUR_KEY 
 def get_location():
     response = requests.get("https://location.services.mozilla.com/v1/geolocate?key=geoclue").json()
     latitude = response["location"]["lat"]
@@ -19,4 +18,3 @@ def get_weather(lat, lon):
     return temp
 
 latitude, longitude = get_location()
-get_weather(latitude, longitude)
