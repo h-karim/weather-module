@@ -14,7 +14,7 @@ To use this module, you need an API key, get it from: https://openweathermap.org
 
 ``` 
 [module/weather]
-type=custome/script
+type=custom/script
 interval=3600  #interval in seconds, change it to however you see fit
 exec= python /path/to/weather.py
 ```
