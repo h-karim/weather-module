@@ -7,7 +7,6 @@ def get_location():
             response = requests.get("https://location.services.mozilla.com/v1/geolocate?key=geoclue").json()
             break
         except(Exception):
-            print ("Failed to connect")
             time.sleep(10)
 
     latitude = response["location"]["lat"]
