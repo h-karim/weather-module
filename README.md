@@ -9,12 +9,12 @@ To use this module, you need an API key, get it from: https://openweathermap.org
 - Make sure you have Python 3.7.3 or later installed
 - Install the ```requests``` module if you don't via ```pip install```
 - Clone this repository
-- Create a ```config``` file inside the repo and add ```api_key= <your api key>``` then save it
+- Create a ```config.py``` file inside the repo and add ```api_key= <your api key>``` then save it
 - In your Polybar config file, add the following:  
 
 ``` 
 [module/weather]
-type=custome/script
+type=custom/script
 interval=3600  #interval in seconds, change it to however you see fit
 exec= python /path/to/weather.py
 ```
