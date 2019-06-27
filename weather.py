@@ -17,7 +17,6 @@ def get_weather(lat, lon):
     temp = data["main"]["temp"] -272.15
     print( str(format(temp, ".1f"))+"°C")
     return temp
-#while True:
+
 latitude, longitude = get_location()
 get_weather(latitude, longitude)
-    #time.sleep(3600)
