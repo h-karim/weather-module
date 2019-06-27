@@ -18,3 +18,4 @@ def get_weather(lat, lon):
     return temp
 
 latitude, longitude = get_location()
+get_weather(latitude, longitude)
