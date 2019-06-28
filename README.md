@@ -7,8 +7,8 @@ At this moment, the module only displays the current temperature ,further work w
 ## Setup
 To use this module, you need an API key, get it from: https://openweathermap.org/price The free version is enough.
 - install the ttf weather icons font:
-  - AUR (arch linux): ```yay ttf-weather-icons```
-  -Or manually from https://github.com/erikflowers/weather-icons if they're not present for your distro
+  - AUR (arch linux): ```yay ttf-weather-icons```      
+  - Or manually from https://github.com/erikflowers/weather-icons if they're not present for your distro
 - Make sure Python 3.7.3 or later is installed
 - Install the ```requests``` module if it's not present via ```pip install```
 - Clone this repository
