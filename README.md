@@ -22,9 +22,6 @@ type=custom/script
 ;interval in seconds, change it accordingly
 interval=900  
 exec= python /path/to/weather.py
-include-file= /path/to/variables_file 
-format-suffix= ${self.temp}
-;weather icon: replace N by the font number+1 (due to 1 indexing) 
-format= %{F#9f78e1}%{TN}<label>
+format= <label>
 ```
 - Make sure to include the module in one of the modules variables 

@@ -1,4 +1,4 @@
-import requests, json, time, os
+import requests, json, time
 from config import api_key 
 
 icons_mapping = {"01d":"\uf00d",
@@ -44,9 +44,4 @@ def get_weather(lat, lon):
 
 latitude, longitude = get_location()
 weather = get_weather(latitude, longitude)
-home = os.environ["HOME"]
-#print(home)
-output = open(home+"/.config/polybar/variables","w")
-print("icon= "+weather[0]+"\n"+"temp= "+weather[1], file=output)
-output.close()
-print(weather[0], end="")
+print(weather[0]+weather[1])
