@@ -6,8 +6,11 @@ At this moment, the module only displays the current temperature ,further work w
 
 ## Setup
 To use this module, you need an API key, get it from: https://openweathermap.org/price The free version is enough.
-- Make sure you have Python 3.7.3 or later installed
-- Install the ```requests``` module if you don't via ```pip install```
+- install the ttf weather icons font:
+  - AUR (arch linux): ```yay ttf-weather-icons```
+  -Or manually from https://github.com/erikflowers/weather-icons if they're not present for your distro
+- Make sure Python 3.7.3 or later is installed
+- Install the ```requests``` module if it's not present via ```pip install```
 - Clone this repository
 - Create a ```config.py``` file inside the repo and add ```api_key= <your api key>``` then save it
 - In your Polybar config file, add the following:  
@@ -17,5 +20,6 @@ To use this module, you need an API key, get it from: https://openweathermap.org
 type=custom/script
 interval=3600  #interval in seconds, change it to whatever you see fit
 exec= python /path/to/weather.py
+label= %output% 
 ```
-- Make sure you include the module in one of your modules variables 
+- Make sure to include the module in one of the modules variables 
