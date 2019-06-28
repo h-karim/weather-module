@@ -44,4 +44,7 @@ def get_weather(lat, lon):
 
 latitude, longitude = get_location()
 weather = get_weather(latitude, longitude)
-print(weather[0]+weather[1], end="")
+output = open("variables","w")
+print("icon= "+weather[0]+"\n"+"temp= "+weather[1], file=output)
+output.close()
+print(weather[0], end="")
