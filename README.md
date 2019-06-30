@@ -2,7 +2,7 @@
 A custom weather module for [Polybar](https://polybar.github.io/)
 
 This module is designed to display location based weather information from OpenWeather using python.
-At this moment, the module only displays the current temperature and a weather icon
+At this moment, the module only displays the current temperature and a weather icon: ![picture](https://imgur.com/a/6MycMct "preview")
 
 ## Setup
 To use this module, an OpenWeather API key is needed, available [here](https://openweathermap.org/price). The free version is enough.
